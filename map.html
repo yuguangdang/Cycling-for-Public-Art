@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Cycling for Public Art</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/strip.css">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   		crossorigin=""/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	</head>
+	<body>
+		
+		<div id="loading"></div>
+		<div id="header"></div>
+		
+		<form id="filter">
+			<input id="filter-text" type="text" placeholder="Search (name, material, location, etc.)" value="">
+			<i class="fas fa-search"></i>
+			<p id="filter-count"><strong>0</strong> records displayed.</p>
+		</form>
+
+		<section class="map">
+			<div id="mapid"></div>
+		</section>
+
+		<section id="artworks"></section>
+
+		<article id="first-template" class="artwork artwork-template">
+			
+			<a href="#" class="strip">
+				<img src="" alt="Record Image">
+			</a>
+			<h2 class="title">Art title</h2>
+
+			<p class="art-detail location"></p>
+			<p class="art-detail material"></p>
+
+			<div class="coordination">	
+				<p class="latitude"></p>
+				<p class="longitude"></p>
+			</div>
+			<div class="buttons">
+				<button>VIEW DETAIL</button>
+				<button>VIEW IN MAP</button>
+			</div>
+		</article>
+
+		<div id="footer"></div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/strip.pkgd.min.js"></script>
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+		<script src="js/map.js"></script>
+		<script src="js/header&footer.js"></script>
+	</body>
+</html>
